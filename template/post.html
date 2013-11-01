@@ -1,0 +1,62 @@
+<section class="redux" id="contenu">
+
+	<article itemscope itemtype="http://schema.org/BlogPosting" role="article" class="post">
+		<header>
+			<h1 itemprop="name" class="name {article_tags_plain}">{article_titre}</h1>
+			<p itemprop="about" class="desc sans">{article_chapo}</p>
+		</header>
+		<aside class="pub-aside sans">
+			<div class="pub-meta">
+				<time itemprop="datePublished">{article_date}</time> à {article_heure} - 
+				par <span itemprop="author">{blog_auteur}</span> - 
+				<a title="Lien vers cet article" rel="bookmark" hreflang="fr" href="{article_lien}">Permalien</a>
+			</div>
+			<span itemprop="keywords" class="pub-tags">Tags&nbsp;: {article_tags}</span>
+			<hr class="clear" />
+			<a class="button accessilink" title="Lire les commentaires de cet article" href="#commentaires">Commentaires</a>
+		</aside>
+		<section itemprop="articleBody" class="contenu">
+			{article_contenu}
+		</section>
+		<footer>
+			<a class="button accessilink" href="#">Haut de page</a>
+		</footer>
+	</article> <!-- fin article -->
+
+	<hr />
+
+	<section id="commentaires">
+		<h2>{nombre_commentaires}.</h2>
+
+		{BOUCLE_commentaires}
+		<article itemscope itemtype="http://schema.org/UserComments" class="comment box" id="{commentaire_ancre}">
+			<h3>
+				<span itemprop="creator">{commentaire_auteur_lien}</span> - 
+				<time itemprop="commentTime">{commentaire_date}</time> à {commentaire_heure}
+			</h3>
+			<section itemprop="commentText">{commentaire_contenu}</section>
+			<div class="box-footer">
+				<a itemprop="replyToUrl" href="#form-commentaire" title="R&eacute;pondre &agrave; ce commentaire" onclick="reply('[b]@[{commentaire_auteur}|#{commentaire_ancre}] :[/b] ');">@répondre</a> - 
+				<a itemprop="url" rel="bookmark" title="Permalien de ce commentaire" href="#{commentaire_ancre}">#lien</a>
+			</div>
+		</article>
+		{/BOUCLE_commentaires}
+
+		<ul id="com-rss">
+			<li><a id="rss-comment" href="{rss_comments}">Flux RSS des commentaires de cet article</a></li>
+			<li><a class="button accessilink" href="#">Haut de page</a></li>
+		</ul>
+
+		<hr />
+
+		<aside role="complementary" id="postcom">
+			<h2>Votre commentaire.</h2>
+			<p class="js-required">Javascript est nécessaire pour commenter.</p>
+
+			{formulaire_commentaire}
+
+			<a class="button accessilink" href="#">Haut de page</a>
+		</aside>
+	</section> <!-- fin #commentaires -->
+
+</section> <!-- fin #contenu -->

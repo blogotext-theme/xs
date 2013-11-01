@@ -1,0 +1,13 @@
+<div class="banner">
+<article itemscope itemtype="http://schema.org/UserComments" class="list box sans" id="{commentaire_ancre}">
+	<h2 class="name">
+		<span itemprop="creator">{commentaire_auteur_lien}</span> - 
+		<time itemprop="commentTime">{commentaire_date}</time> à {commentaire_heure}
+	</h2>
+	<section itemprop="commentText">{commentaire_contenu}</section>
+	<div class="box-footer">
+		<a itemprop="replyToUrl" href="#form-commentaire" title="R&eacute;pondre &agrave; ce commentaire" onclick="reply('[b]@[{commentaire_auteur}|#{commentaire_ancre}] :[/b] ');">@répondre</a> - 
+		<a itemprop="url" rel="bookmark" title="Permalien de ce commentaire" href="#{commentaire_ancre}">#lien</a>
+	</div>
+</article>
+</div>

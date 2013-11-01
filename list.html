@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>{article_titre_page}{blog_nom}</title>
+	<meta name="robots" content="all" />
+	<meta name="description" content="{blog_description}" />
+	<meta name="generator" content="BlogoText" />
+	<!-- XS theme for Blogotext - 2013 - Licensed under CC0 1.0 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet prefetch" type="text/css" href="{style}/style.css" />
+	<link rel="stylesheet prefetch" type="text/css" href="http://fonts.googleapis.com/css?family=ABeeZee" /><!-- sans-serif -->
+	<link rel="stylesheet prefetch" type="text/css" href="http://fonts.googleapis.com/css?family=Libre%20Baskerville" /><!-- serif -->
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0 - Articles" href="{rss}" />
+	<style type="text/css">#email-adress{display:none!important;}</style>
+</head>
+
+<body role="document" id="main">
+
+<header role="banner" id="header">
+	<hgroup>
+		<h1><a rel="home" title="Page d'accueil du blog" href="index.php">{blog_nom}</a></h1>
+		<h2>{blog_description}</h2>
+	</hgroup>
+</header> <!-- fin #header -->
+
+<nav role="navigation" class="redux" id="nav">
+	<ul id="nav-common">
+		<li><a class="button accessilink sizing" title="Aller directement au contenu" href="#contenu">contenu</a></li><!--
+		--><li><a class="button sizing" title="Mes articles publi&eacute;s" href="index.php">articles</a></li><!--
+		--><li><a class="button sizing" title="Vos commentaires" href="index.php?mode=comments">commentaires</a></li><!--
+		--><li><a class="button sizing" title="Mes liens favoris" href="index.php?mode=links">favoris</a></li>
+	</ul>
+	<form role="search" action="/index.php" method="get" id="nav-search"> <!-- formulaire de recherche -->
+		<fieldset>
+			<legend>Recherche</legend>
+			<label for="q">Mots-clés</label>
+			<input class="ns-input" id="q" name="q" placeholder="Entrez un mot-clé&hellip;" type="search" />
+			<input class="ns-input" id="input-rechercher" value="Recherchez&nbsp;!" type="submit" />
+		</fieldset>
+	</form>
+</nav> <!-- fin #nav -->
+
+<section id="contenu">
+	{BOUCLE_posts}
+
+	{/BOUCLE_posts}
+
+	{pagination}
+</section> <!-- fin #contenu -->
+
+<aside role="complementary" class="redux" id="sidebar">
+	<div id="sidebar-cal">
+		<h2>Calendrier</h2>
+		{calendrier}
+	</div>
+	<div id="sidebar-tag">
+		<h2>Tags</h2>
+		{categories_encart}
+	</div>
+	<hr class="clear" /> <!-- bloque float -->
+	<div id="sidebar-com">
+		<h2>Derniers commentaires</h2>
+		{commentaires_encart}
+	</div>
+
+	<a class="button accessilink" href="#">Haut de page</a>
+</aside> <!-- fin #sidebar -->
+
+<footer role="contentinfo" id="footer">
+	<p>
+		<b>{blog_auteur}</b>, tous droits réservés.<br />
+		Blog propulsé par <a hreflang="fr" href="http://lehollandaisvolant.net/blogotext/">BlogoText {version}</a> et son thème XS.
+	</p>
+</footer> <!-- fin #footer -->
+<script type="text/javascript" src="{style}/balisage-commentaires.js"></script>
+</body>
+</html>
