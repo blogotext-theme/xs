@@ -42,4 +42,3 @@ function resize(id, dht) {
 	elem.style.height = size+"px";
 	return false;
 }
-

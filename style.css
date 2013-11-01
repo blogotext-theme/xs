@@ -1,6 +1,8 @@
 @charset "UTF-8";
 /* XS theme for Blogotext - 2013 - Licensed under CC0 1.0 */
 
+#email-adress{display:none!important;}
+
 @media screen, handheld {
 
 /* GENERAL

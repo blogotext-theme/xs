@@ -2,17 +2,25 @@
 <html>
 <head>
 	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<title>{article_titre_page}{blog_nom}</title>
 	<meta name="robots" content="all" />
 	<meta name="description" content="{blog_description}" />
 	<meta name="generator" content="BlogoText" />
+	<meta name="author" content="{blog_auteur}" />
 	<!-- XS theme for Blogotext - 2013 - Licensed under CC0 1.0 -->
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="icon" type="image/png" href="{style}/images/favicon.png" />
+	<link rel="apple-touch-icon" href="{style}/images/apple-touch-icon.png">
+	<link rel="canonical" href="{racine_du_site}" />
+	<link rel="image_src" href="{style}/images/apple-touch-icon.png" />
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="{style}/images/apple-touch-icon.png">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 	<link rel="stylesheet prefetch" type="text/css" href="{style}/style.css" />
 	<link rel="stylesheet prefetch" type="text/css" href="http://fonts.googleapis.com/css?family=ABeeZee" /><!-- sans-serif -->
 	<link rel="stylesheet prefetch" type="text/css" href="http://fonts.googleapis.com/css?family=Libre%20Baskerville" /><!-- serif -->
 	<link rel="alternate" type="application/rss+xml" title="RSS 2.0 - Articles" href="{rss}" />
-	<style type="text/css">#email-adress{display:none!important;}</style>
 </head>
 
 <body role="document" id="main">
@@ -73,6 +81,6 @@
 		Blog propulsé par <a hreflang="fr" href="http://lehollandaisvolant.net/blogotext/">BlogoText {version}</a> et son thème XS.
 	</p>
 </footer> <!-- fin #footer -->
-<script type="text/javascript" src="{style}/balisage-commentaires.js"></script>
+<script type="text/javascript" src="{style}/js/balisage-commentaires.js"></script>
 </body>
 </html>
