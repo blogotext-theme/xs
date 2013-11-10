@@ -40,6 +40,8 @@ Il est actuellement maintenu par [Jonathan Renoult](mailto:renoult.jonathan@tild
 	notice and this notice are preserved. This file is offered as-is,
 	without any warranty.
 
+ [![Flattr this git repo](http://api.flattr.com/button/flattr-badge-large.png)](http://flattr.com/thing/734525/Blogotext)
+
 <!-- LIENS -->
 [blogotext]: <http://lehollandaisvolant.net/blogotext/fr/>
 [blogotext-xs]: <https://github.com/blogotext-theme/xs/archive/master.zip>
