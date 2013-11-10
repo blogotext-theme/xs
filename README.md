@@ -1,10 +1,17 @@
-# BLOGOTEXT XS
+XS
+===
 **Un thème accessible pour Blogotext**
 
 ## PRÉSENTATION
 Blogotext XS est un thème HTML 5 et CSS 3 pour le cms [Blogotext][blogotext] par Timo.
 
-Ce thème mise sur l’accessibilité (haut niveau de contraste, responsive design, rôles WAI-ARIA) et la sémantique (balisage fort, microdatas, microformats).
+Ce thème mise sur l’accessibilité (haut niveau de contraste, responsive design, rôles WAI-ARIA) et la sémantique (balisage fort, microdatas, microformats).
+
+---
+
+![alt tag](http://www.xoofoo.org/uploads/thm_blogotext/xs.png)
+
+---
 
 ## INSTALLATION
 
